@@ -94,10 +94,10 @@ static const char *colorname[] = {
         "DodgerBlue3",
         "magenta3",
         "DarkCyan",
-        "gray90",
+        "grey30",
 
         /* 8 bright colors */
-        "gray50",
+        "grey50",
         "red3",
         "green3",
         "yellow3",
@@ -111,7 +111,7 @@ static const char *colorname[] = {
         /* more colors can be added after 255 to use with DefaultXX */
         "black",
         "white",
-        "gray95",
+        "grey95",
 };
 
 

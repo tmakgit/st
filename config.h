@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:size=12:antialias=true:autohint=true";
+static char *font = "Fira Code:size=12:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
@@ -89,7 +89,7 @@ static const char *colorname[] = {
         /* 8 normal colors */
         "black",
         "red3",
-        "green4",
+        "SeaGreen4",
         "DarkGoldenrod",
         "DodgerBlue3",
         "magenta3",
@@ -99,7 +99,7 @@ static const char *colorname[] = {
         /* 8 bright colors */
         "grey50",
         "red3",
-        "green4",
+        "SeaGreen4",
         "DarkGoldenrod",
         "DodgerBlue3",
         "magenta3",
@@ -111,6 +111,7 @@ static const char *colorname[] = {
         /* more colors can be added after 255 to use with DefaultXX */
         "black",
         "white",
+        "grey70",
         "grey95", /* r:242 g:242 b:242 */
 };
 
@@ -119,10 +120,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 0;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 258;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 1;
+static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor

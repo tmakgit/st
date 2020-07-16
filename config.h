@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:size=12:antialias=true:autohint=true";
+static char *font = "Fira Code:size=13:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
@@ -109,10 +109,7 @@ static const char *colorname[] = {
         [255] = 0,
 
         /* more colors can be added after 255 to use with DefaultXX */
-        "black",
-        "white",
-        "grey70",
-        "grey95", /* r:242 g:242 b:242 */
+        "grey80"
 };
 
 
@@ -120,10 +117,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
+unsigned int defaultfg = 256;
 unsigned int defaultbg = 0;
 static unsigned int defaultcs = 1;
-static unsigned int defaultrcs = 256;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor

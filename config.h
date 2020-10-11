@@ -65,7 +65,8 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-16color";
+//char *termname = "st-16color";
+char *termname = "st-256color";
 
 /*
  * spaces per tab
@@ -86,30 +87,29 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-        /* 8 normal colors */
-        "black",           /* #000000 r:0   g:0   b:0   */ 
-        "red3",            /* #af0000 r:175 g:0   b:0   */ 
-        "SeaGreen4",       /* #2e8b57 r:46  g:139 b:87  */
-        "DarkGoldenrod",   /* #af8700 r:175 g:135 b:0   */
-        "DodgerBlue3",     /* #005fd7 r:0   g:95  b:215 */
-        "magenta3",        /* #af00af r:175 g:0   b:175 */
-        "DarkCyan",        /* #00af87 r:0   g:175 b:135 */
-        "grey30",          /* #af0000 r:175 g:0   b:0   */
+  /* 8 normal colors */
+  "#eee8d5",
+  "#dc322f",
+  "#859900",
+  "#b58900",
+  "#268bd2",
+  "#d33682",
+  "#2aa198",
+  "#073642",
 
-        /* 8 bright colors */
-        "grey50",          /* #808080 r:128 g:128 b:128 */
-        "red3",
-        "SeaGreen4",
-        "DarkGoldenrod",
-        "DodgerBlue3",
-        "magenta3",
-        "DarkCyan",
-        "white",           /* #ffffff r:255 g:255 b:255 */
+  /* 8 bright colors */
+  "#fdf6e3",
+  "#cb4b16",
+  "#93a1a1",
+  "#839496",
+  "#657b83",
+  "#6c71c4",
+  "#586e75",
+  "#002b36",
 
-        [255] = 0,
+  [255] = 0,
 
-        /* more colors can be added after 255 to use with DefaultXX */
-        "grey80"           /* #c8c8c8 r:200 g:200 b:200 */
+  /* more colors can be added after 255 to use with DefaultXX */
 };
 
 
@@ -117,10 +117,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 256;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 1;
-static unsigned int defaultrcs = 0;
+unsigned int defaultfg = 12;
+unsigned int defaultbg = 8;
+static unsigned int defaultcs = 14;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor

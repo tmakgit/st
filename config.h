@@ -87,41 +87,41 @@ unsigned int tabspaces = 8;
 
 // SOLARIZED LIGHT
 /* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-
-  /* 8 normal colors */
-  [0] = "#002b36", /* black   */
-  [1] = "#dc322f", /* red     */
-  [2] = "#859900", /* green   */
-  [3] = "#b58900", /* yellow  */
-  [4] = "#268bd2", /* blue    */
-  [5] = "#6c71c4", /* magenta */
-  [6] = "#2aa198", /* cyan    */
-  [7] = "#93a1a1", /* white   */
-
-  /* 8 bright colors */
-  [8]  = "#657b83", /* black   */
-  [9]  = "#dc322f", /* red     */
-  [10] = "#859900", /* green   */
-  [11] = "#b58900", /* yellow  */
-  [12] = "#268bd2", /* blue    */
-  [13] = "#6c71c4", /* magenta */
-  [14] = "#2aa198", /* cyan    */
-  [15] = "#fdf6e3", /* white   */
-
-  /* special colors */
-  [256] = "#fdf6e3", /* background */
-  [257] = "#586e75", /* foreground */
-};
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor
- */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 0;
+//static const char *colorname[] = {
+//
+//  /* 8 normal colors */
+//  [0] = "#002b36", /* black   */
+//  [1] = "#dc322f", /* red     */
+//  [2] = "#859900", /* green   */
+//  [3] = "#b58900", /* yellow  */
+//  [4] = "#268bd2", /* blue    */
+//  [5] = "#6c71c4", /* magenta */
+//  [6] = "#2aa198", /* cyan    */
+//  [7] = "#93a1a1", /* white   */
+//
+//  /* 8 bright colors */
+//  [8]  = "#657b83", /* black   */
+//  [9]  = "#dc322f", /* red     */
+//  [10] = "#859900", /* green   */
+//  [11] = "#b58900", /* yellow  */
+//  [12] = "#268bd2", /* blue    */
+//  [13] = "#6c71c4", /* magenta */
+//  [14] = "#2aa198", /* cyan    */
+//  [15] = "#fdf6e3", /* white   */
+//
+//  /* special colors */
+//  [256] = "#fdf6e3", /* background */
+//  [257] = "#586e75", /* foreground */
+//};
+//
+///*
+// * Default colors (colorname index)
+// * foreground, background, cursor
+// */
+//unsigned int defaultfg = 257;
+//unsigned int defaultbg = 256;
+//static unsigned int defaultcs = 257;
+//static unsigned int defaultrcs = 0;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
@@ -133,41 +133,41 @@ static unsigned int defaultunderline = 7;
 
 // BLACK
 /* Terminal colors (16 first used in escape sequence) */
-//static const char *colorname[] = {
-//  /* 8 normal colors */
-//  "#000000",
-//  "#cd0000",
-//  "#00cd00",
-//  "#cdcd00",
-//  "#005fd7",
-//  "#cd00cd",
-//  "#00cdcd",
-//  "#c9c9c9",
-//
-//  /* 8 bright colors */
-//  "#262626",
-//  "#cd0000",
-//  "#00cd00",
-//  "#cdcd00",
-//  "#005fd7",
-//  "#cd00cd",
-//  "#00cdcd",
-//  "#ffffff",
-//
-//  [255] = 0,
-//
-//  /* more colors can be added after 255 to use with DefaultXX */
-//};
-//
-//
-///*
-// * Default colors (colorname index)
-// * foreground, background, cursor, reverse cursor
-// */
-//unsigned int defaultfg = 7;
-//unsigned int defaultbg = 0;
-//static unsigned int defaultcs = 1;
-//static unsigned int defaultrcs = 0;
+static const char *colorname[] = {
+  /* 8 normal colors */
+  "#000000",
+  "#cd0000",
+  "#00cd00",
+  "#cdcd00",
+  "#005fd7",
+  "#cd00cd",
+  "#00cdcd",
+  "#c9c9c9",
+
+  /* 8 bright colors */
+  "#262626",
+  "#cd0000",
+  "#00cd00",
+  "#cdcd00",
+  "#005fd7",
+  "#cd00cd",
+  "#00cdcd",
+  "#ffffff",
+
+  [255] = 0,
+
+  /* more colors can be added after 255 to use with DefaultXX */
+};
+
+
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor, reverse cursor
+ */
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 1;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor

@@ -74,8 +74,8 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-16color";
-//char *termname = "st-256color";
+//char *termname = "st-16color";
+char *termname = "st-256color";
 
 /*
  * spaces per tab
@@ -95,50 +95,35 @@ char *termname = "st-16color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
+// Bluloco Light theme from Mac
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"#114488",
-	"magenta3",
-	"cyan3",
-	"gray90",
-//  "#000000",
-//  "#cd0000",
-//  "#00cd00",
-//  "#cdcd00",
-//  "#005fd7",
-//  "#cd00cd",
-//  "#00cdcd",
-//  "#c9c9c9",
+	"#d5d6dc", /* black */
+	"#d52652", /* red */
+	"#239749", /* green */
+	"#df621b", /* yellow */ 
+	"#275fe4", /* blue */
+	"#823ef0", /* magenta */
+	"#26608c", /* cyan */
+	"#000000", /* white */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#114488",
-	"magenta",
-	"cyan",
-	"white",
-//  "#262626",
-//  "#cd0000",
-//  "#00cd00",
-//  "#cdcd00",
-//  "#005fd7",
-//  "#cd00cd",
-//  "#00cdcd",
-//  "#ffffff",
+	"#e4e5ec", /* black */
+	"#ff637f", /* red */
+	"#3cbc66", /* green */
+	"#c5a231", /* yellow */
+	"#0099e0", /* blue */
+	"#ce32c0", /* magenta */
+	"#6d92ba", /* cyan */
+	"#26272c", /* white */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"#e5e5e5", /* default foreground colour */
-	"#114488", /* default background colour */
+	"#f22658", /* cursor */
+	"#feffff", /* cursor text */
+	"#373a41", /* default foreground colour */
+	"#f9f9f9", /* default background colour */
 };
 
 

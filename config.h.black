@@ -99,30 +99,30 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"#000000", /* black */
-	"#d52652", /* red */
-	"#239749", /* green */
-	"#df621b", /* yellow */ 
-	"#275fe4", /* blue */
-	"#823ef0", /* magenta */
-	"#26608c", /* cyan */
-	"#d5d6dc", /* white */
+	"#cd0000", /* red */
+	"#00cd00", /* green */
+	"#cdcd00", /* yellow */ 
+	"#005fd7", /* blue */
+	"#cd00cd", /* magenta */
+	"#00cdcd", /* cyan */
+	"#c9c9c9", /* white */
 
 	/* 8 bright colors */
-	"#26272c", /* black */
-	"#ff637f", /* red */
-	"#3cbc66", /* green */
-	"#c5a231", /* yellow */
-	"#0099e0", /* blue */
-	"#ce32c0", /* magenta */
-	"#6d92ba", /* cyan */
-	"#e4e5ec", /* white */
+	"#262626", /* black */
+	"#cd0000", /* red */
+	"#00cd00", /* green */
+	"#cdcd00", /* yellow */
+	"#005fd7", /* blue */
+	"#cd00cd", /* magenta */
+	"#00cdcd", /* cyan */
+	"#ffffff", /* white */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#f22658", /* cursor */
-	"#feffff", /* cursor text */
-	"#d5d6dc", /* default foreground colour */
+	"#cd0000", /* cursor */
+	"#000000", /* cursor text */
+	"#c9c9c9", /* default foreground colour */
 	"#000000", /* default background colour */
 };
 

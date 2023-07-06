@@ -75,7 +75,8 @@ static int bellvolume = 0;
 
 /* default TERM value */
 //char *termname = "st-16color";
-char *termname = "st-256color";
+//char *termname = "st-256color";
+char *termname = "xterm-mono";
 
 /*
  * spaces per tab
@@ -100,7 +101,7 @@ static const char *colorname[] = {
 	/* 8 normal colors */
 	"#000000", /* black */
 	"#cd0000", /* red */
-	"#00cd00", /* green */
+	"#66cc00", /* green */
 	"#cdcd00", /* yellow */ 
 	"#005fd7", /* blue */
 	"#cd00cd", /* magenta */
@@ -110,7 +111,7 @@ static const char *colorname[] = {
 	/* 8 bright colors */
 	"#262626", /* black */
 	"#cd0000", /* red */
-	"#00cd00", /* green */
+	"#66cc00", /* green */
 	"#cdcd00", /* yellow */
 	"#005fd7", /* blue */
 	"#cd00cd", /* magenta */
@@ -120,9 +121,9 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cd0000", /* cursor */
+	"#66cc00", /* cursor */
 	"#000000", /* cursor text */
-	"#c9c9c9", /* default foreground colour */
+	"#66cc00", /* default foreground colour */
 	"#000000", /* default background colour */
 };
 

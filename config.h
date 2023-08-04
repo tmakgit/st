@@ -123,10 +123,6 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#000000", /* cursor */
-	"#ffffff", /* cursor text */
-	"#000000", /* default foreground colour */
-	"#ffffff", /* default background colour */
 };
 
 
@@ -134,10 +130,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 0;
+unsigned int defaultbg = 15;
+unsigned int defaultcs = 1;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
@@ -146,7 +142,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 4;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers

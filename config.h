@@ -76,8 +76,8 @@ static int bellvolume = 0;
 /* default TERM value */
 //char *termname = "st-16color";
 //char *termname = "st-256color";
-//char *termname = "xterm-256color";
-char *termname = "xterm";
+char *termname = "xterm-256color";
+//char *termname = "xterm";
 
 /*
  * spaces per tab
@@ -97,44 +97,89 @@ char *termname = "xterm";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-// Bluloco Light theme from Mac
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#000000", /* black */
-	"#cd0000", /* red */
-	"#00cd00", /* green */
-	"#cdcd00", /* yellow */ 
-	"#005fd7", /* blue */
-	"#cd00cd", /* magenta */
-	//"#00cdcd", /* cyan */
-	"#7dfdfe", /* cyan */
-	"#c9c9c9", /* white */
 
-	/* 8 bright colors */
-	"#262626", /* black */
-	"#cd0000", /* red */
-	"#00cd00", /* green */
-	"#cdcd00", /* yellow */
-	"#005fd7", /* blue */
-	"#cd00cd", /* magenta */
-	//"#00cdcd", /* cyan */
-	"#7dfdfe", /* cyan */
-	"#ffffff", /* white */
+  /* 8 normal colors */
+  [0] = "#2b2b2b", /* black   */
+  [1] = "#da4939", /* red     */
+  [2] = "#a5c261", /* green   */
+  [3] = "#ffc66d", /* yellow  */
+  [4] = "#6d9cbe", /* blue    */
+  [5] = "#b6b3eb", /* magenta */
+  [6] = "#519f50", /* cyan    */
+  [7] = "#e6e1dc", /* white   */
 
-	[255] = 0,
+  /* 8 bright colors */
+  [8]  = "#5a647e", /* black   */
+  [9]  = "#da4939", /* red     */
+  [10] = "#a5c261", /* green   */
+  [11] = "#ffc66d", /* yellow  */
+  [12] = "#6d9cbe", /* blue    */
+  [13] = "#b6b3eb", /* magenta */
+  [14] = "#519f50", /* cyan    */
+  [15] = "#f9f7f3", /* white   */
 
-	/* more colors can be added after 255 to use with DefaultXX */
+  /* special colors */
+  [256] = "#2b2b2b", /* background */
+  [257] = "#e6e1dc", /* foreground */
 };
-
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
+ * foreground, background, cursor
  */
-unsigned int defaultfg = 6;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 1;
-static unsigned int defaultrcs = 0;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 256;
+
+/*
+ * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ * will reverse too. Another logic would only make the simple feature too
+ * complex.
+ */
+unsigned int defaultitalic = 7;
+unsigned int defaultunderline = 7;
+
+// STANDARD COLORS-ISH
+/* Terminal colors (16 first used in escape sequence) */
+//static const char *colorname[] = {
+//	/* 8 normal colors */
+//	"#000000", /* black */
+//	"#cd0000", /* red */
+//	"#00cd00", /* green */
+//	"#cdcd00", /* yellow */ 
+//	"#005fd7", /* blue */
+//	"#cd00cd", /* magenta */
+//	//"#00cdcd", /* cyan */
+//	"#7dfdfe", /* cyan */
+//	"#c9c9c9", /* white */
+//
+//	/* 8 bright colors */
+//	"#262626", /* black */
+//	"#cd0000", /* red */
+//	"#00cd00", /* green */
+//	"#cdcd00", /* yellow */
+//	"#005fd7", /* blue */
+//	"#cd00cd", /* magenta */
+//	//"#00cdcd", /* cyan */
+//	"#7dfdfe", /* cyan */
+//	"#ffffff", /* white */
+//
+//	[255] = 0,
+//
+//	/* more colors can be added after 255 to use with DefaultXX */
+//};
+//
+//
+///*
+// * Default colors (colorname index)
+// * foreground, background, cursor, reverse cursor
+// */
+//unsigned int defaultfg = 6;
+//unsigned int defaultbg = 0;
+//unsigned int defaultcs = 1;
+//static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor

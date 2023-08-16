@@ -76,7 +76,8 @@ static int bellvolume = 0;
 /* default TERM value */
 //char *termname = "st-16color";
 //char *termname = "st-256color";
-char *termname = "xterm-256color";
+//char *termname = "xterm-256color";
+char *termname = "xterm";
 
 /*
  * spaces per tab
@@ -106,7 +107,7 @@ static const char *colorname[] = {
 	"#005fd7", /* blue */
 	"#cd00cd", /* magenta */
 	//"#00cdcd", /* cyan */
-	"#00afff", /* cyan */
+	"#7dfdfe", /* cyan */
 	"#c9c9c9", /* white */
 
 	/* 8 bright colors */
@@ -117,7 +118,7 @@ static const char *colorname[] = {
 	"#005fd7", /* blue */
 	"#cd00cd", /* magenta */
 	//"#00cdcd", /* cyan */
-	"#00afff", /* cyan */
+	"#7dfdfe", /* cyan */
 	"#ffffff", /* white */
 
 	[255] = 0,
@@ -130,10 +131,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 0;
-unsigned int defaultbg = 15;
+unsigned int defaultfg = 6;
+unsigned int defaultbg = 0;
 unsigned int defaultcs = 1;
-static unsigned int defaultrcs = 15;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor

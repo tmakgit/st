@@ -137,6 +137,7 @@ static const char *colorname[] = {
 unsigned int defaultfg = 0;
 unsigned int defaultbg = 15;
 unsigned int defaultcs = 1;
+// the color of the cursor when selected with a mouse selection/ drag
 static unsigned int defaultrcs = 15;
 
 /*

@@ -108,7 +108,7 @@ static const char *colorname[] = {
 	"#4171AE", /* blue */
 	"#8959A8", /* magenta */
 	"#3E999F", /* cyan */
-	"#C9C9C9", /* white */
+	"#C9C9C9", /* gray */
 
 	/* 8 bright colors */
 	"#000000", /* black */
@@ -135,7 +135,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 0;
-unsigned int defaultbg = 15;
+unsigned int defaultbg = 7;
 unsigned int defaultcs = 1;
 // the color of the cursor when selected with a mouse selection/ drag
 static unsigned int defaultrcs = 15;

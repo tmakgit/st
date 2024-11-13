@@ -97,48 +97,46 @@ char *termname = "xterm-16color";
  */
 unsigned int tabspaces = 8;
 
-// Tomorrow
-// https://github.com/Gogh-Co/Gogh/blob/master/themes/Tomorrow.yml
+// Colors
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#000000", /* black */
-	"#C82828", /* red */
-	"#718C00", /* green */
-	"#EAB700", /* yellow */ 
-	"#4171AE", /* blue */
-	"#8959A8", /* magenta */
-	"#3E999F", /* cyan */
-	"#C9C9C9", /* gray */
+    /* 8 normal colors */
+    "#2E3436", /* black */
+    "#CC0000", /* red */
+    "#4E9A06", /* green */
+    "#C4A000", /* yellow */
+    "#3465A4", /* blue */
+    "#75507B", /* magenta */
+    "#06989A", /* cyan */
+    "#D3D7CF", /* white */
 
-	/* 8 bright colors */
-	"#000000", /* black */
-	"#C82828", /* red */
-	"#708B00", /* green */
-	"#E9B600", /* yellow */
-	"#4170AE", /* blue */
-	"#8958A7", /* magenta */
-	"#3D999F", /* cyan */
-	"#FFFEFE", /* white */
+    /* 8 bright colors */
+    "#555753", /* bright black */
+    "#EF2929", /* bright red */
+    "#8AE234", /* bright green */
+    "#FCE94F", /* bright yellow */
+    "#729FCF", /* bright blue */
+    "#AD7FA8", /* bright magenta */
+    "#34E2E2", /* bright cyan */
+    "#EEEEEC", /* bright white */
 
-	[255] = 0,
+    [255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
+    /* more colors can be added after 255 to use with DefaultXX */
     "#300A24", /* background */
-    "#000000", /* foreground */
-    "#C82828", /* cursor */
-    "#000000", /* reverse cursor */
+    "#EEEEEC", /* foreground */
+    "#CC0000", /* cursor */
+    "#EEEEEC", /* reverse cursor */
 };
-
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
 unsigned int defaultbg = 256;
-unsigned int defaultcs = 1;
+unsigned int defaultfg = 257;
+unsigned int defaultcs = 258;
 // the color of the cursor when selected with a mouse selection/ drag
-static unsigned int defaultrcs = 15;
+static unsigned int defaultrcs = 259;
 
 /*
  * Default shape of cursor

@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode:size=12:antialias=true:autohint=true";
+//static char *font = "FiraCode:size=12:antialias=true:autohint=true";
+static char *font = "Terminus:size=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -74,10 +75,11 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
+//char *termname = "st-mono";
 //char *termname = "st-16color";
 //char *termname = "st-256color";
-char *termname = "xterm-16color";
-//char *termname = "xterm-256color";
+//char *termname = "xterm-16color";
+char *termname = "xterm-256color";
 //char *termname = "xterm";
 
 /*
@@ -122,10 +124,10 @@ static const char *colorname[] = {
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
-    "#300A24", /* background */
-    "#EEEEEC", /* foreground */
-    "#CC0000", /* cursor */
-    "#EEEEEC", /* reverse cursor */
+    "#000000", /* background */
+    "#98CFCD", /* foreground */
+    "#98CFCD", /* cursor */
+    "#000000", /* reverse cursor */
 };
 
 /*

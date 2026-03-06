@@ -94,38 +94,59 @@ char *termname = "xterm-16color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
+//static const char *colorname[] = {
+//	"grey11",
+//	"red3",
+//	"green3",
+//	"yellow3",
+//	"steelblue",
+//	"purple3",
+//	"cyan3",
+//	"grey90",
+//
+//	"grey45",
+//	"red3",
+//	"green3",
+//	"yellow3",
+//	"steelblue",
+//	"purple3",
+//	"cyan3",
+//	"grey93",
+//
+//	[255] = 0,
+//
+//};
+
+/* Monokai-style 16-color palette (st) */
 static const char *colorname[] = {
-	"grey11",
-	"red3",
-	"green3",
-	"yellow3",
-	"steelblue",
-	"purple3",
-	"cyan3",
-	"grey90",
+    /* 8 normal colors */
+    "#1B1D1E", /* 0 black   */
+    "#F92672", /* 1 red     */
+    "#82B414", /* 2 green   */
+    "#FD971F", /* 3 yellow  */
+    "#56C2D6", /* 4 blue    */
+    "#8C54FE", /* 5 magenta */
+    "#465457", /* 6 cyan    */
+    "#CCCCC6", /* 7 white   */
 
-	"grey45",
-	"red3",
-	"green3",
-	"yellow3",
-	"steelblue",
-	"purple3",
-	"cyan3",
-	"grey93",
+    /* 8 bright colors */
+    "#505354", /* 8 bright black */
+    "#FF5995", /* 9 bright red   */
+    "#B6E354", /* 10 bright green */
+    "#FEED6C", /* 11 bright yellow */
+    "#8CEDFF", /* 12 bright blue  */
+    "#9E6FFE", /* 13 bright magenta */
+    "#899CA1", /* 14 bright cyan  */
+    "#F8F8F2", /* 15 bright white (Monokai foreground) */
 
-	[255] = 0,
-
+    [255] = 0,
 };
 
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 1;
-static unsigned int defaultrcs = 3;
+/* Defaults */
+unsigned int defaultfg = 15; /* #F8F8F2 (foreground) */
+unsigned int defaultbg = 0;  /* #1B1D1E (background) */
+unsigned int defaultcs = 9; /* cursor */
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor

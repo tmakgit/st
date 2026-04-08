@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono:size=13:antialias=true:autohint=true";
+static char *font = "IBM Plex Mono:size=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -104,7 +104,7 @@ static const char *colorname[] = {
 	"cyan3", //6
 	"grey90", //7
 
-	"grey30", //8
+	"grey40", //8
 	"red3", //9
 	"green3", //10
 	"yellow3", //11

@@ -95,33 +95,35 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"black", //0
-	"red3", //1
-	"green3", //2
-	"yellow3", //3
-	"steelblue", //4
-	"mediumpurple3", //5
-	"cyan3", //6
-	"grey90", //7
+	//dark
+	"black",
+	"darkred",
+	"darkgreen",
+	"orange4",
+	"navyblue",
+	"deeppink4",
+	"deepskyblue4",
+	"grey70",
 
-	"grey40", //8
-	"red3", //9
-	"green3", //10
-	"yellow3", //11
-	"steelblue", //12
-	"mediumpurple3", //13
-	"cyan3", //14
-	"grey93", //15
+	//bright
+	"grey30",
+	"red3",
+	"green3",
+	"yellow3",
+	"steelblue",
+	"mediumpurple3",
+	"cyan3",
+	"grey85",
 
 	[255] = 0,
 
 };
 
 /* Defaults */
-unsigned int defaultfg = 7; 
-unsigned int defaultbg = 0;  
-unsigned int defaultcs = 1; 
-static unsigned int defaultrcs = 0;
+unsigned int defaultfg = 0; 
+unsigned int defaultbg = 15;  
+unsigned int defaultcs = 2; 
+static unsigned int defaultrcs = 3;
 
 /*
  * Default shape of cursor

@@ -1565,9 +1565,9 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
 			g.fg = defaultfg;
 			g.bg = defaultrcs;
 		} else {
-			// Changing from default bg to fg for readability
-			//g.fg = defaultbg;
-			g.fg = defaultfg;
+			// How to change from default bg to fg for readability
+			//g.fg = defaultfg;
+			g.fg = defaultbg;
 			g.bg = defaultcs;
 		}
 		drawcol = dc.col[g.bg];
